@@ -1,13 +1,11 @@
 import express from "express";
 
+import rota from "./router/index.js";
+
 const app = express();
 
-const dotenv = require('dotenv');
-dotenv.config();
-process.env.PORT (8070)
+const port = process.env.PORT 
 
-app.get('/user', (request, response) => response.status (200).send('Hello Wold'));
+app.use(rota)
 
-const app = require('./app');
-
-app.listen(8070, () => console.log('server running or port 8070'));
+app.listen(port, () => console.log(`server running or port ${port}`));
