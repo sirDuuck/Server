@@ -1,4 +1,6 @@
 import express from 'express';
+import { getFunction, postFunction, putFunction} from './server_base/src/controller/client';
+import { getFunction, postFunction, putFunction} from './server_base/src/controller/certificado';
 
 const rota = express.Router();
 
