@@ -1,0 +1,7 @@
+const getAll = (requerst, response) => {
+    return response.status(200).json({message:'ta sussa'});
+};
+
+module.exports = {
+    getAll,
+};
